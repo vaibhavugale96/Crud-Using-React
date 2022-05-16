@@ -1,0 +1,122 @@
+body{
+  background:#E3D0D0;
+}
+
+.Tipcalc input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+ input[type=submit] {
+    background-color: #2E86F8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  
+ input[type=submit]:hover {
+    background-color: #45a049;
+    
+  }
+  .Tipcalc .heading{
+      text-align: center;
+      background-color: #0F87FF;
+      color: white;
+      height: 40px;
+      line-height: 40px;
+      margin-top: -20px;
+
+  }
+  .Tipcalc .heading2{
+   text-align: center;
+     border: 1px solid grey;
+      color: black;
+      height: 40px;
+      line-height: 0px;
+}
+.Tipcalc{margin: 30px 0px;
+display: flex;
+}
+  .Tipcalc .container  {
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 30px;
+  }
+  .fa{
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .fa-eye{
+    color: blue;
+  }
+  .fa-trash{
+    color: red;
+  }
+  .fa-pencil{
+    color: green;
+  }
+  .Tipcalc .container2  {
+    width: 50%;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 30px;
+  }
+  .Tipcalc .cs-list{
+    
+    max-height: 150px; 
+    overflow: auto;
+      padding: 10px 30px;
+      border: 1px solid grey;
+  }
+  .Tipcalc .calculate{
+      padding: 20px;
+  }
+  .Tipcalc .customers{
+      margin: 20px 0px;
+      background-color: white;
+  }
+  .Tipcalc ul>li{
+      line-height: 30px;
+  }
+  .Tipcalc .display-block{
+      display: block;
+  }
+  .Tipcalc .display-none{
+      display: none;
+  }
+  .customer-table {
+ 
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .customer-table td, .customer-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+      text-align: center;
+  }
+  
+  
+  .customer-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  
+    background-color: #2E86F8;
+    color: white;
+  }
