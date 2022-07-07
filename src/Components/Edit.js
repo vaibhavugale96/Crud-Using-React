@@ -15,7 +15,7 @@ function Edit() {
   useEffect(() => {
     async function getAllStudents(){
       try {
-      const students = await axios.get(`http://127.0.0.1:8000/sampleapi/${id}`)
+      const students = await axios.get(`http://localhost:3333/students/${id}`)
       console.log(students.data);
       setStudents(students.data);
       
@@ -35,7 +35,7 @@ function Edit() {
     async function updateData(e) {
       e.preventDefault();
       try {
-        await axios.put(`http://127.0.0.1:8000/sampleapi/${id}`,students)
+        await axios.put(`http://localhost:3333/students/${id}`,students)
    
        
    } catch (error){
