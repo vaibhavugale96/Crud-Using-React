@@ -15,7 +15,7 @@ function Edit() {
   useEffect(() => {
     async function getAllStudents(){
       try {
-      const students = await axios.get(`http://localhost:8000/list/${id}`)
+      const students = await axios.get(`https://django-api96.herokuapp.com/list/${id}`)
       console.log(students.data);
       setStudents(students.data);
       
@@ -35,7 +35,7 @@ function Edit() {
     async function updateData(e) {
       e.preventDefault();
       try {
-        await axios.put(`http://localhost:8000/update/${id}`,students)
+        await axios.put(`https://django-api96.herokuapp.com/update/${id}`,students)
         window.alert("data Updated Successfully")
    
        
