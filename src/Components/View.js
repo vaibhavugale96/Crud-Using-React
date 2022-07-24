@@ -17,7 +17,7 @@ getAllStudents();
 
   async function getAllStudents(){
     try {
-    const students = await axios.get(`http://localhost:3333/students/${id}`)
+    const students = await axios.get(`http://localhost:8000/list/${id}`)
     console.log(students.data);
     setStudents(students.data);
     

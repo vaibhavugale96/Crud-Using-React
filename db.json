@@ -2,33 +2,28 @@
   "students": [
     {
       "stuname": "Vaibhav",
-      "email": "Sajdsa@shg.com",
+      "email": "Vaibhav@96.com",
       "id": 1
     },
     {
-      "stuname": "sfdffd",
-      "email": "3er@vfg.tg",
+      "stuname": "",
+      "email": "",
       "id": 2
     },
     {
-      "stuname": "e",
-      "email": "fr",
+      "stuname": "",
+      "email": "",
       "id": 3
     },
     {
-      "stuname": "frr",
-      "email": "rrrthgftr",
+      "stuname": "",
+      "email": "",
       "id": 4
     },
     {
-      "stuname": "dfr",
-      "email": "rf",
+      "stuname": "",
+      "email": "",
       "id": 5
-    },
-    {
-      "stuname": "Rahul",
-      "email": "Rahul@ajsa.com",
-      "id": 6
     }
   ],
   "players": [

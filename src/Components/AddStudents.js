@@ -18,7 +18,7 @@ function TipCalc() {
     
     async function getAllStu(){
       try {
-      const students = await axios.get("http://localhost:3333/students")
+      const students = await axios.get("http://localhost:8000/list/")
       console.log(students);
       setStudents(students.data);
       
@@ -36,7 +36,7 @@ const handleChange=(e)=>{
   console.log(addstu)
   }
   async function deleteData(id) {
-      await axios.delete(`http://localhost:3333/students/${id}`);
+      await axios.delete(`http://localhost:8000/delete/${id}`);
       var newstudent = students.filter((item)=>{
            return item.id !== id;
       })
@@ -48,7 +48,7 @@ const handleChange=(e)=>{
   async function addData(e) {
    e.preventDefault();
    try {
-     await axios.post(`http://localhost:3333/students`,addstu)
+     await axios.post(`http://localhost:8000/create/`,addstu)
     setStatus(true)
     
 } catch (error){

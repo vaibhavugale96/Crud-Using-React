@@ -15,7 +15,7 @@ function Edit() {
   useEffect(() => {
     async function getAllStudents(){
       try {
-      const students = await axios.get(`http://localhost:3333/students/${id}`)
+      const students = await axios.get(`http://localhost:8000/list/${id}`)
       console.log(students.data);
       setStudents(students.data);
       
@@ -35,11 +35,12 @@ function Edit() {
     async function updateData(e) {
       e.preventDefault();
       try {
-        await axios.put(`http://localhost:3333/students/${id}`,students)
+        await axios.put(`http://localhost:8000/update/${id}`,students)
+        window.alert("data Updated Successfully")
    
        
    } catch (error){
-       console.log("Something is wrong")
+    window.alert("Something is Wrong")
    }
     }
   return (
