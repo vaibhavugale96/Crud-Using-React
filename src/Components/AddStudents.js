@@ -50,9 +50,11 @@ const handleChange=(e)=>{
    try {
      await axios.post(`https://django-api96.herokuapp.com/create/`,addstu)
     setStatus(true)
+    alert("Data added successfully")
     
 } catch (error){
     console.log("Something is wrong")
+    alert("Please add valid Data")
 }
  }
  if (status){

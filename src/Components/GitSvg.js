@@ -6,7 +6,8 @@ function GitSvg() {
        <a
       href="https://github.com/vaibhavugale96/django-crud-api"
       target="_blank"
-      title="Github Repo"> <svg
+      title="Github Repo"> 
+      <svg
         width="75"
         height="75"
         viewBox="0 0 250 250"
