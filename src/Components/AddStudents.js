@@ -60,7 +60,7 @@ const handleChange=(e)=>{
  }
   return <div className='Tipcalc'>
     
-      <div className="container" style={{height:'300px'}}>
+      <div className="container mb20" style={{height:'300px'}}>
 		<div className="heading">
 			<h2>Add Student</h2>
 		</div>
