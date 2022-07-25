@@ -3,11 +3,14 @@ import './App.css';
 import AddStudents from './Components/AddStudents';
 import View from './Components/View';
 import Edit from './Components/Edit'
+import GitSvg from './Components/GitSvg';
 
 
 function App() {
   return (
     <div className="App">
+     <GitSvg/>
+
     <div className='title'>
       <h2>Crud Using React and Django Api</h2>
       
