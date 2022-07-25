@@ -17,7 +17,7 @@ getAllStudents();
 
   async function getAllStudents(){
     try {
-    const students = await axios.get(`http://localhost:8000/list/${id}`)
+    const students = await axios.get(`https://django-api96.herokuapp.com/list/${id}`)
     console.log(students.data);
     setStudents(students.data);
     
