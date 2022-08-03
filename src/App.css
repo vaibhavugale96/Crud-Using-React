@@ -129,20 +129,27 @@ input[type="submit"]:hover {
 .Tipcalc .display-none {
   display: none;
 }
-.customer-table {
+.student-table {
   border-collapse: collapse;
   width: 100%;
   background-color: white;
 }
 
-.customer-table td,
-.customer-table th {
+.student-table td,
+.student-table th {
+  width: 20%;
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
 }
-
-.customer-table th {
+.student-table tbody{
+  width: 100%;
+    display: block;
+    
+    max-height: 260px;
+    overflow-y: auto
+}
+.student-table th {
   padding-top: 12px;
   padding-bottom: 12px;
 

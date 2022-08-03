@@ -8,7 +8,8 @@ function Edit() {
   
   const [students,setStudents]=useState({
     firstName : " ",
-    email : " "
+    email : " ",
+    address : " "
   });
  
 
@@ -56,6 +57,9 @@ function Edit() {
       <input type="text"    name="stuname" value={students.stuname} onChange={e=> handleChange(e)} placeholder="Your Name"/>
           <label >Enter your Email</label>
           <input type="text"   name='email' value={students.email}   onChange={e=> handleChange(e)} placeholder="Enter your Email"/>
+          
+          <label >Enter your Address</label>
+          <input type="text"   name='address' value={students.address}   onChange={e=> handleChange(e)} placeholder="Enter your Email"/>
           
           <input type="submit" onClick={updateData} value="Update Student Details " style={{marginLeft:"10px"}}  />
         

@@ -31,11 +31,12 @@ getAllStudents();
     
     <div className='customer-detail' >
         
-         <table className='customer-table' >
+         <table className='student-table' >
   <tr>
     <th>No</th>
     <th>Name</th>
     <th>Email</th>
+    <th>Address</th>
     
   
   </tr>
@@ -45,6 +46,7 @@ getAllStudents();
                 <td>{id}</td>
                 <td> {students.stuname}</td>
                 <td> {students.email}</td>
+                <td> {students.address}</td>
    
             </tr>
           

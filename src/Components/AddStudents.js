@@ -62,7 +62,7 @@ const handleChange=(e)=>{
  }
   return <div className='Tipcalc'>
     
-      <div className="container mb20" style={{height:'300px'}}>
+      <div className="container mb20" style={{height:'350px'}}>
 		<div className="heading">
 			<h2>Add Student</h2>
 		</div>
@@ -71,6 +71,8 @@ const handleChange=(e)=>{
           <input type="text" onChange={e=> handleChange(e)}   name="stuname" placeholder="Your Name"/>
           <label >Enter your Email</label>
           <input type="text"  onChange={e=> handleChange(e)} name='email'    placeholder="Enter your Email"/>
+          <label >Enter your Address</label>
+          <input type="text"  onChange={e=> handleChange(e)} name='address'    placeholder="Enter your Address"/>
           
           <input type="submit" onClick={addData} value="Add Student " style={{marginLeft:"10px"}}  />
        
@@ -84,12 +86,13 @@ const handleChange=(e)=>{
 		</div>
 		
         
-         <table className='customer-table' >
+         <table className='student-table' >
            <tbody>
   <tr>
     <th>No</th>
     <th>Name</th>
     <th>Email</th>
+    <th>Address</th>
     <th>Action</th>
   
   </tr>
@@ -101,6 +104,7 @@ const handleChange=(e)=>{
                 <td>{i+1}</td>
                 <td> {student.stuname}</td>
                 <td> {student.email}</td>
+                <td> {student.address}</td>
     <td><Link to={`/view/${student.id}`}> <i className="fa fa-eye"></i></Link> <Link to={`/edit/${student.id}`}><i className="fa fa-pencil"></i> </Link> <i className="fa fa-trash " onClick={()=>deleteData(student.id)}></i></td>
             </tr>
           )
